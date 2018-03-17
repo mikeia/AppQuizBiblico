@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#162576"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.mikeias.quiz.Activity.QuizActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/pergunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Onde se concentrava a força de Sansão?"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="1"
+            android:padding="15dp"
+            android:background="@drawable/panel_pergunta"/>
+
+        <RadioGroup
+            android:id="@+id/rgRespostas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/rbResposta1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Barba"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_marginTop="2dp"
+                android:padding="10dp"
+                android:background="@drawable/panel_resposta"/>
+
+            <RadioButton
+                android:id="@+id/rbResposta2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tranças"
+                android:textColor="#fff"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:background="@drawable/panel_resposta"/>
+
+            <RadioButton
+                android:id="@+id/rbResposta3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vestes"
+                android:textColor="#fff"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:background="@drawable/panel_resposta"/>
+
+        </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_marginBottom="2dp">
+
+            <Button
+                android:id="@+id/btnResponder"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_jogar"
+                android:gravity="center"
+                android:text="Responder"
+                android:layout_marginTop="30dp"
+                android:textColor="#FEBB49"
+                android:textSize="18sp"
+                android:onClick="btnResponderOnClick"/>
+            <Button
+                android:id="@+id/btnFinalizar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_jogar"
+                android:gravity="center"
+                android:text="Finalizar"
+                android:layout_marginTop="10dp"
+                android:textColor="#FEBB49"
+                android:textSize="18sp"
+                android:onClick="btnFinalizarOnClick"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

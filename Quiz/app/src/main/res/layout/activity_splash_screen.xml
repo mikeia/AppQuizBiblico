@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#162576"
+    android:orientation="vertical"
+    tools:context="com.example.mikeias.quiz.Activity.SplashScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#162576"
+            android:layout_gravity="end"
+            android:src="@drawable/medalha"
+            android:onClick="btn_ranking"
+            android:layout_marginRight="16dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/muitobem" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz"
+            android:textAlignment="center"
+            android:textColor="#FEBB49"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Biblíco"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    <Button
+        android:id="@+id/btnjogar"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Jogar"
+        android:textSize="22sp"
+        android:textColor="#FEBB49"
+        android:onClick="btnJogarOnClick"
+        android:background="@drawable/btn_jogar"/>
+    </LinearLayout>
+</LinearLayout>
